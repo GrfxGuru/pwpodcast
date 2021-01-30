@@ -40,26 +40,32 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="bio">
+    <div className="flex justify-center pb-8">
       {avatar && (
         <Image
           fixed={avatar}
           alt={author?.name || ``}
-          className="bio-avatar"
+          className=""
           imgStyle={{
             borderRadius: `50%`,
           }}
         />
       )}
+      <div className="pl-3">
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          <strong className="text-red-600">{author.name}</strong>
+          <br/>
+          <p className="text-blue-500">{author?.summary || null}</p>
+          <a className="text-xs" href={`https://twitter.com/${social?.twitter || ``}`}>
+            Twitter
+          </a> {' '}
+          <a className="text-xs" href="https://www.linkedin.com/in/peterwitham">
+            LinkedIN
           </a>
         </p>
       )}
+      </div>
     </div>
   )
 }

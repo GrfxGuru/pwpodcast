@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Hello World description here trying to make it go across multiple lines. But it might take a lot of text to get the wrap?"
 ---
 
 This is my first post on my new fake blog! How exciting!

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `PWPodcast.com`,
+    title: `PWPodcast`,
     author: {
       name: `Peter Witham`,
       summary: `Developer, Designer, Creative Explorer`,
@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

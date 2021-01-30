@@ -25,29 +25,29 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All Posts" />
       <Bio />
+      <p className="text-center font-bold text-red-700 p-5">Under developerment, thanks for being patient</p>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
+            <Link to={post.fields.slug} itemProp="url">
             <li key={post.fields.slug}>
               <article
-                className="post-list-item"
+                className="container mt-5 pt-3 pb-6 pr-6 pl-6 w-3/4 bg-yellow-100 rounded-lg shadow-lg"
                 itemScope
                 itemType="http://schema.org/Article"
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
+                      <span itemProp="headline" className="font-bold text-xl text-red-700">{title}</span>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <p className="font-medium text-xs pb-5 pt-1 text-gray-700">{post.frontmatter.date}</p>
                 </header>
                 <section>
-                  <p
+                  <p className="tracking-normal leading-normal"
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
@@ -56,6 +56,7 @@ const BlogIndex = ({ data, location }) => {
                 </section>
               </article>
             </li>
+        </Link>
           )
         })}
       </ol>

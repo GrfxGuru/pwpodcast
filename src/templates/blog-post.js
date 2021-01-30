@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className=""
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -29,12 +29,11 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
+        <footer className="pt-5 pb-5">
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className="">
         <ul
           style={{
             display: `flex`,
