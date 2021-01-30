@@ -17,15 +17,16 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className=""
+        className="container mt-5 mb-5 pt-3 pb-6 pr-6 pl-6 w-3/4 bg-yellow-50 rounded-lg shadow-lg"
         itemScope
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1 itemProp="headline" className="font-bold text-3xl text-red-700">{post.frontmatter.title}</h1>
+          <p className="font-medium text-xm pb-5 pt-1 text-gray-700">{post.frontmatter.date}</p>
         </header>
         <section
+          className="tracking-normal leading-normal pt-2"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
@@ -33,7 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="">
+      <nav className="mx-auto w-9/12">
         <ul
           style={{
             display: `flex`,
@@ -50,6 +51,7 @@ const BlogPostTemplate = ({ data, location }) => {
               </Link>
             )}
           </li>
+          <li><Link to="#">Page Top</Link></li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">

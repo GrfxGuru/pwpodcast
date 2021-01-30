@@ -15,8 +15,8 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="" to="/">
-        {title}
+      <Link to="/">
+        <div className="text-3xl text-center pt-12 pb-10">{title}</div>
       </Link>
     )
   }
