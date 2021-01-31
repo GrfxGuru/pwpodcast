@@ -9,14 +9,14 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="text-3xl text-center pt-12 pb-14">
-        <Link to="/">{title}</Link>
+      <h1 className="pt-12 pb-14">
+        <div className="flex flex-col pt-12 pb-10"><img src="/images/site-logo.png" style={{width: 232, margin: 'auto'}}/></div>
       </h1>
     )
   } else {
     header = (
       <Link to="/">
-        <div className="text-3xl text-center pt-12 pb-10">{title}</div>
+        <div className="flex flex-col pt-12 pb-10"><img src="/images/site-logo.png" style={{width: 232, margin: 'auto'}}/></div>
       </Link>
     )
   }

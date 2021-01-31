@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.1em;
+    color: darkred;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+}
+
+.podcastSubscribeButton {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
