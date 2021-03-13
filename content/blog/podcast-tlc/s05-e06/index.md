@@ -1,6 +1,6 @@
 ---
 title: The Life Creative Podcast - Are You Doing The Right Work? Should You Delegate or Outsource?
-date: "2021-02-31T02:45:00.284Z"
+date: "2021-02-21T02:45:00.284Z"
 description: "As creative people we spend a lot of time working on tasks. But maybe we need to hand some of those over to other people?"
 ---
 
