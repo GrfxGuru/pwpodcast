@@ -1,5 +1,5 @@
 ---
-title: CompileSwift - WWDC32 Keynote reactions with Leo Dion
+title: CompileSwift - WWDC21 Keynote reactions with Leo Dion
 date: "2021-06-09T22:35:00.284Z"
 description: "Leo Dion joins me to discuss the Apple WWDC21 Keynote."
 ---
